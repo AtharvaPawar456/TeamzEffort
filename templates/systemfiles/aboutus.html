@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block title %}About Us | Teamz Efforts{% endblock %}
+
+{% block extra_css %}
+<style>
+  .gradient-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+  }
+  .profile-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  }
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 0 auto 1.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    font-size: 1.75rem;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="gradient-bg py-3">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-5xl font-bold mb-6">About Teamz Efforts</h1>
+    <p class="text-xl max-w-3xl mx-auto mb-8">
+      Building a thriving community by showcasing inspiring profiles, sharing knowledge about DXN products, and offering quality accessories.
+    </p>
+    <a href="#profiles" 
+       class="inline-block bg-white text-blue-600 font-semibold px-8 py-1 rounded-lg hover:bg-gray-100 transition">
+      Explore Profiles
+    </a>
+  </div>
+</section>
+
+<!-- Our Story -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:flex items-center">
+    <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+      <p class="text-gray-600 mb-6">
+        Founded in 2023, Teamz Efforts started with a vision: to connect people through meaningful social profiling and interactive engagement. 
+        We believe in highlighting individual journeys to inspire and guide newcomers.
+      </p>
+      <p class="text-gray-600">
+        Alongside our vibrant community, we provide authentic information about DXN products and offer a range of essential accessories, ensuring our members have the tools they need to grow and succeed.
+      </p>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1470&q=80" 
+           alt="Team collaboration" 
+           class="rounded-xl shadow-xl w-full h-auto">
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-12">Our Core Values</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="value-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Community First</h3>
+        <p class="text-gray-600">We prioritize building genuine connections and sharing real user stories.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="value-icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Knowledge Sharing</h3>
+        <p class="text-gray-600">Providing in-depth information about DXN products to empower informed choices.</p>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="value-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Trust & Integrity</h3>
+        <p class="text-gray-600">Ensuring transparency and authenticity in every profile and product we present.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Profiles -->
+<section id="profiles" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Inspiring Profiles</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Meet individuals who are making an impact and learn from their journeys.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="profile-card bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Profile member" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-1">Arjun Mehta</h3>
+          <p class="text-blue-600 mb-3">DXN Wellness Ambassador</p>
+          <p class="text-gray-600">Helping communities embrace healthier living with DXN solutions.</p>
+        </div>
+      </div>
+      <div class="profile-card bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Profile member" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-1">Priya Sharma</h3>
+          <p class="text-blue-600 mb-3">Entrepreneur</p>
+          <p class="text-gray-600">Built a successful accessory business while mentoring newcomers.</p>
+        </div>
+      </div>
+      <div class="profile-card bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Profile member" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-1">Rahul Desai</h3>
+          <p class="text-blue-600 mb-3">Community Mentor</p>
+          <p class="text-gray-600">Guiding new members with strategies to succeed in Teamz Efforts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section id="contact" class="py-16 bg-blue-50">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Join Teamz Efforts Today</h2>
+    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+      Be part of a community that uplifts, educates, and inspires. Explore DXN products, connect with achievers, and start your journey.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="/contactus" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+        Contact Us
+      </a>
+      <a href="/products" class="px-8 py-3 bg-white text-blue-600 border-2 border-blue-600 font-semibold rounded-lg hover:bg-gray-50 transition">
+        Explore DXN Products
+      </a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

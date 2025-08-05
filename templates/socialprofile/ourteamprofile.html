@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}{{ profile.profname }} | Profile{% endblock %}
+
+{% block content %}
+<section id="home" class="space-y-6">
+
+<!-- Profile Header -->
+<div class="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 p-8 rounded-3xl shadow-xl">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8">
+    
+    <!-- Profile Image -->
+    <div class="flex-shrink-0">
+      <img src="{{ profile.profimg }}" alt="{{ profile.profname }}"
+           class="w-64 h-64 rounded-3xl object-cover shadow-lg border-4 border-white hover:scale-105 transition-transform duration-300" />
+    </div>
+
+    <!-- Profile Details -->
+    <div class="flex-1">
+      <h2 class="text-3xl font-bold text-gray-800 leading-tight mb-3">
+        {{ profile.profname }}
+      </h2>
+
+      {% if profile.profstatus != '*' %}
+      <span class="inline-block px-4 py-1 text-md bg-blue-600 text-white rounded-full font-semibold shadow-sm mb-3">
+        {{ profile.profstatus }}
+      </span>
+      {% endif %}
+
+      <p class="text-gray-700 text-lg font-medium italic mb-2">
+        "{{ profile.profoneline }}"
+      </p>
+
+      <p class="text-gray-800 text-md font-medium mb-2">
+        📍 <span class="ml-1">{{ profile.profaddress }}</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 text-gray-700 mt-4">
+        <div class="flex items-center gap-2">
+          <span class="font-bold">DXN ID :</span>
+          <span class="font-medium">{{ profile.profphone }}</span>
+        </div>
+        <!-- <div class="flex items-center gap-2">
+          <span>📧</span>
+          <span class="font-medium">{{ profile.profemailid }}</span>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- About Me Section -->
+  <div class="max-w-7xl mx-auto px-6 py-8 bg-white rounded-lg shadow space-y-4">
+    <h3 class="text-2xl font-bold text-gray-800">About Me</h3>
+    <p class="text-gray-700 whitespace-pre-line">{{ profile.profaboutme }}</p>
+  </div>
+
+  <!-- Profile Info Section -->
+  <div class="max-w-7xl mx-auto px-6 py-8 bg-white rounded-lg shadow space-y-4">
+    <h3 class="text-2xl font-bold text-gray-800">Additional Info</h3>
+    <p class="text-gray-700 whitespace-pre-line">{{ profile.profinfo }}</p>
+  </div>
+
+  <!-- Profile Content Section -->
+  <div class="max-w-7xl mx-auto px-6 py-8 bg-white rounded-lg shadow space-y-4">
+    <h3 class="text-2xl font-bold text-gray-800">My Content</h3>
+    <p class="text-gray-700 whitespace-pre-line">{{ profile.profcontent }}</p>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="max-w-7xl mx-auto px-6 py-8">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Gallery</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {% for img in galleryLinks %}
+
+      
+        {% if img %}
+        <div class="bg-white rounded shadow p-2">
+          <img src="{{ img }}" class="rounded-lg object-cover w-full h-48" alt="Gallery Image">
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <div class="max-w-7xl mx-auto px-6 py-8">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Featured Videos</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {% for video in videoLinks %}
+        {% if video %}
+        <div class="bg-white rounded shadow p-2">
+          <iframe class="rounded-lg w-full h-48" src="{{ video }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+{% endblock %}

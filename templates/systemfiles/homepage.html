@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}About Us | DigitalAssets{% endblock %}
+
+{% block content %}
+<section class="space-y-6">
+
+  <!-- Hero Heading -->
+  <h1 class="text-4xl font-bold text-center pb-10">Welcome to DigitalAssets</h1>
+
+
+  <!-- Carousel Section (Auto-scrolls every 2s for 10s, loops infinitely) -->
+  <div class="w-full overflow-hidden relative">
+    <div id="carouselContainer"
+      class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory transition-all duration-500">
+      {% for img in carouselImages %}
+      <div class="min-w-[300px] snap-center">
+        <img src="{{ img.imglink }}" alt="Product Image" class="w-full h-64 object-cover rounded-lg shadow-md">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carousel = document.getElementById("carouselContainer");
+      const scrollAmount = 320; // Adjust to card width + margin
+      const scrollInterval = 2000; // 2 seconds per scroll
+      const scrollDuration = 10000; // Total 10 seconds active scroll
+
+      let scrollDirection = 1;
+      let elapsed = 0;
+
+      function autoScrollCarousel() {
+        if (!carousel) return;
+
+        carousel.scrollBy({
+          left: scrollAmount * scrollDirection,
+          behavior: 'smooth'
+        });
+
+        elapsed += scrollInterval;
+        if (elapsed >= scrollDuration) {
+          elapsed = 0; // Reset after 10 seconds
+          carousel.scrollTo({ left: 0, behavior: 'smooth' }); // Go back to start
+        }
+      }
+
+      setInterval(autoScrollCarousel, scrollInterval);
+    });
+  </script>
+
+  <!-- Platform Stats -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4">
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold">{{ totalProducts }}</h2>
+      <p class="text-gray-500">Total Products</p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold">{{ socialProfiles }}</h2>
+      <p class="text-gray-500">Social Profiles</p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold">{{ storeItems }}</h2>
+      <p class="text-gray-500">Store Items</p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold">{{ activeEvents }}</h2>
+      <p class="text-gray-500">Active Events</p>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h2 class="text-2xl font-semibold">{{ autoGenBanners }}</h2>
+      <p class="text-gray-500">Auto Gen Banners</p>
+    </div>
+  </div>
+
+</section>
+{% endblock %}

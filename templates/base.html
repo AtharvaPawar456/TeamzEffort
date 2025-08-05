@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}TeamzEfforts{% endblock %}</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ytTeamzeffort.png" type="image/x-icon">
+  <meta http-equiv="refresh" content="120">
+
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="TeamzEfforts" />
+  <meta property="og:description" content="TeamzEfforts - A platform for creating social profiles and sharing information." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ytTeamzeffort.png" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #app { display: flex; min-height: 100vh; flex-direction: column; }
+    main { flex: 1 0 auto; padding-bottom: 4rem; }
+    @media (min-width: 768px) { main { padding-bottom: 0; } }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <div id="app">
+    <!-- Mobile Navbar -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 shadow md:hidden">
+      <button onclick="toggleMenu()" class="text-gray-700 text-2xl">☰</button>
+      <a href="/" class="flex items-center">
+        <img src="https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ytTeamzeffort.png" alt="Logo" class="h-10 mr-2">
+        <span class="font-bold text-lg">Teamz Efforts</span>
+      </a>
+      <div class="w-8"></div>
+    </header>
+
+    <div class="flex flex-col md:flex-row pt-16 md:pt-0">
+      <!-- Desktop Sidebar -->
+      <aside class="bg-gray-100 w-64 hidden md:flex flex-col h-screen sticky top-0 border-r">
+        <div class="p-6 border-b flex items-center justify-center cursor-pointer" onclick="window.location.href='/'">
+          <img src="https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ytTeamzeffort.png" alt="Logo" class="h-10 mr-2">
+          <p class="font-bold text-lg">Teamz Efforts</p>
+        </div>
+        <nav class="flex-1 px-4 py-4 space-y-2">
+          <a href="/" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-home w-6 mr-3"></i>Home</a>
+          {% if user.username == "assetADmin" %}
+            <a href="/analysis" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-chart-line w-6 mr-3"></i>Analysis</a>
+          {% endif %}
+          <a href="/products" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-box w-6 mr-3"></i>Products</a>
+          <a href="/ourteam" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-users w-6 mr-3"></i>Our Team</a>
+          <a href="/ourstore" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-store w-6 mr-3"></i>Store</a>
+          <a href="/aboutus" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-info-circle w-6 mr-3"></i>About Us</a>
+          <a href="/contactus" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-phone w-6 mr-3"></i>Contact</a>
+        </nav>
+        <div class="p-4 border-t">
+          {% if user.is_authenticated %}
+            <a href="/profile" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-user-circle w-6 mr-3"></i>Profile · {{ user.username }}</a>
+            <a href="/logout" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-sign-out-alt w-6 mr-3"></i>Logout</a>
+          {% else %}
+            <a href="/login" class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-200"><i class="fas fa-sign-in-alt w-6 mr-3"></i>Login</a>
+          {% endif %}
+        </div>
+      </aside>
+
+      <!-- Mobile Sidebar -->
+      <div id="mobileMenu" class="fixed top-0 left-0 w-64 h-full bg-gray-100 text-gray-800 transform -translate-x-full transition-transform duration-300 z-40 flex flex-col">
+        <p class="py-10"></p>
+        <div class="flex-1 overflow-y-auto p-4 space-y-2">
+          <a href="/" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-home w-6 mr-3"></i>Home</a>
+          {% if user.username == "assetADmin" %}
+            <a href="/analysis" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-chart-line w-6 mr-3"></i>Analysis</a>
+          {% endif %}
+          <a href="/products" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-box w-6 mr-3"></i>Products</a>
+          <a href="/ourteam" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-users w-6 mr-3"></i>Our Team</a>
+          <a href="/ourstore" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-store w-6 mr-3"></i>Store</a>
+          <a href="/aboutus" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-info-circle w-6 mr-3"></i>About Us</a>
+          <a href="/contactus" class="flex items-center px-4 py-3 border-b hover:bg-gray-200"><i class="fas fa-phone w-6 mr-3"></i>Contact</a>
+        </div>
+        <div class="p-4 border-t">
+          {% if user.is_authenticated %}
+            <a href="/profile" class="flex items-center px-4 py-3 hover:bg-gray-200"><i class="fas fa-user-circle w-6 mr-3"></i>Profile</a>
+            <a href="/logout" class="flex items-center px-4 py-3 hover:bg-gray-200"><i class="fas fa-sign-out-alt w-6 mr-3"></i>Logout</a>
+          {% else %}
+            <a href="/login" class="flex items-center px-4 py-3 hover:bg-gray-200"><i class="fas fa-sign-in-alt w-6 mr-3"></i>Login</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <main class="flex-1 overflow-y-auto bg-white p-4 md:p-8">
+          {% block content %}{% endblock %}
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 text-center text-sm text-gray-600 p-4">
+          &copy; 2025 <strong>TeamzEfforts</strong>. All rights reserved.
+        </footer>
+      </div>
+    </div>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around py-2 z-40">
+      <a href="/" class="flex flex-col items-center px-4 py-2 text-gray-700"><i class="fas fa-home text-xl"></i><span class="text-xs mt-1">Home</span></a>
+      <a href="/products" class="flex flex-col items-center px-4 py-2 text-gray-600 hover:text-gray-700"><i class="fas fa-box text-xl"></i><span class="text-xs mt-1">Products</span></a>
+      <a href="/ourteam" class="flex flex-col items-center px-4 py-2 text-gray-600 hover:text-gray-700"><i class="fas fa-users text-xl"></i><span class="text-xs mt-1">Team</span></a>
+    </nav>
+  </div>
+
+  <!-- JS: Toggle Menu -->
+  <script>
+    function toggleMenu() {
+      try {
+        const menu = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("mobileMenuOverlay");
+
+        menu.classList.toggle("-translate-x-full");
+
+        if (overlay) {
+          overlay.classList.toggle("hidden");
+          document.body.classList.toggle("overflow-hidden");
+        } else if (!menu.classList.contains("-translate-x-full")) {
+          const newOverlay = document.createElement("div");
+          newOverlay.id = "mobileMenuOverlay";
+          newOverlay.className = "fixed inset-0 bg-black bg-opacity-50 z-30";
+          newOverlay.onclick = toggleMenu;
+          document.body.appendChild(newOverlay);
+          document.body.classList.add("overflow-hidden");
+        }
+      } catch (error) {
+        console.error("Error toggling menu:", error);
+      }
+    }
+  </script>
+</body>
+</html>
