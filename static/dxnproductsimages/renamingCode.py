@@ -35,10 +35,10 @@ def renameAllFiles(folderPath):
         print(f"Error: {error}")
 
 
-folderList = [
+# folderList = [
     # "dxn-2in1",
     # "dxn-butterfly-pea",
-    "dxn-cocozhi",
+    # "dxn-cocozhi",
     # "dxn-cordi-coffee",
     # "DXN-Cow-Ghee",
     # "dxn-jaggery",
@@ -53,19 +53,21 @@ folderList = [
     # "dxn-tailam",
     # "dxn-tooth-paste",
     # "dxn-virgin-oil"
-]
+# ]
 
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
-files = os.listdir("dxn-2in1")
+# files = os.listdir("dxn-2in1")
+# files = os.listdir("dxn-cocozhi")
 
 
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/Dxn%20Spirulina.png"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-cocozhi/"
 # for fileName in files:
-#     print(f"{tempPath}{fileName};")
+#     print(f"'{tempPath}{fileName}',")
 
 
 
