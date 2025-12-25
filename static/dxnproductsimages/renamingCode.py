@@ -14,8 +14,8 @@ def renameAllFiles(folderPath):
     """
     try:
         files = sorted(os.listdir(folderPath))
-        # fileCounter = 1
-        fileCounter = 112
+        fileCounter = 1
+        # fileCounter = 112
 
         for fileName in files:
             oldPath = os.path.join(folderPath, fileName)
@@ -57,21 +57,24 @@ folderList = [
     "dxn-2in1-v2"
 ]
 
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
 # files = os.listdir("dxn-2in1")
 # files = os.listdir("dxn-cocozhi")
 # files = os.listdir("dxn-tooth-paste")
+files = os.listdir("dxn-2in1-v2")
 
 
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/Dxn%20Spirulina.png"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-cocozhi/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/"
-# for fileName in files:
-#     print(f"'{tempPath}{fileName}',")
+
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
+for fileName in files:
+    print(f"'{tempPath}{fileName}',")
 
 
 
