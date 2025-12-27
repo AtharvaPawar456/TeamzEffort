@@ -44,35 +44,32 @@ folderList = [
 
 ]
 
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
-# files = os.listdir("dxn-2in1")
-# files = os.listdir("dxn-cocozhi")
-# files = os.listdir("dxn-tooth-paste")
-# files = os.listdir("dxn-2in1-v2")
 
+folderName = folderList[0]
+files = os.listdir(folderName)
 
 
 
 
 
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/Dxn%20Spirulina.png"
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-cocozhi/"
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/"
 
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
-# for fileName in files:
-#     print(f"'{tempPath}{fileName}',")
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-imgs/"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-shorts/"
+
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-2-imgs/"
 
 
-# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
-# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
+for fileName in files:
+    print(f"{tempPath}{fileName};")
+    # print(f"'{tempPath}{fileName}',")
 
 
-# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
-# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
 
-
+"""
+https://raw.githubusercontent.com/AtharvaPawar456/HandMadeProjects/refs/heads/main/siteimages/teampics/AakashShinde.png;https://raw.githubusercontent.com/AtharvaPawar456/HandMadeProjects/refs/heads/main/siteimages/teampics/YashChavan.jpg;https://raw.githubusercontent.com/AtharvaPawar456/HandMadeProjects/refs/heads/main/siteimages/teampics/AtharvaPawar.jpg
+"""
