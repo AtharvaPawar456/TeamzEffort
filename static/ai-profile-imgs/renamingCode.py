@@ -1,0 +1,78 @@
+import os
+
+
+def renameAllFiles(folderPath):
+    """
+    Renames all files inside a folder sequentially.
+
+    Input:
+        folderPath (str): Target directory path
+
+    Working:
+        - Iterates through all files
+        - Renames each file to file_<number> with original extension
+    """
+    try:
+        files = sorted(os.listdir(folderPath))
+        fileCounter = 1
+        # fileCounter = 112
+
+        for fileName in files:
+            oldPath = os.path.join(folderPath, fileName)
+
+            if not os.path.isfile(oldPath):
+                continue
+
+            _, extension = os.path.splitext(fileName)
+            newFileName = f"file_{fileCounter}{extension}"
+            newPath = os.path.join(folderPath, newFileName)
+
+            os.rename(oldPath, newPath)
+            fileCounter += 1
+
+        print(f"Renamed {fileCounter - 1} files in '{folderPath}' successfully.")
+
+    except Exception as error:
+        print(f"Error: {error}")
+
+
+folderList = [
+    "kadam",
+    "kadam/kadam-ai-avatar/avatar-1-imgs",
+    "kadam/kadam-ai-avatar/avatar-1-shorts",
+    "kadam/kadam-ai-avatar/avatar-2-shorts",
+
+]
+
+for folder in folderList:
+    renameAllFiles(folder)
+
+
+# files = os.listdir("dxn-2in1")
+# files = os.listdir("dxn-cocozhi")
+# files = os.listdir("dxn-tooth-paste")
+# files = os.listdir("dxn-2in1-v2")
+
+
+
+
+
+
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/Dxn%20Spirulina.png"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-cocozhi/"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/"
+
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
+# for fileName in files:
+#     print(f"'{tempPath}{fileName}',")
+
+
+# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
+
+
+# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
+
+

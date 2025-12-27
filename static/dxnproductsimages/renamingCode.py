@@ -77,6 +77,11 @@ for fileName in files:
     print(f"'{tempPath}{fileName}',")
 
 
+https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
 
+
+https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
 
 
