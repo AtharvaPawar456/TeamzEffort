@@ -41,28 +41,19 @@ folderList = [
     "kadam/kadam-ai-avatar/avatar-1-imgs",
     "kadam/kadam-ai-avatar/avatar-1-shorts",
     "kadam/kadam-ai-avatar/avatar-2-shorts",
-
 ]
-
 # for folder in folderList:
 #     renameAllFiles(folder)
 
-
-
-folderName = folderList[0]
+folderName = folderList[3]
 files = os.listdir(folderName)
 
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/"
 
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-imgs/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-shorts/"
 
-
-
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/"
-
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-imgs/"
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-1-shorts/"
-
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-2-imgs/"
-
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/ai-profile-imgs/kadam/kadam-ai-avatar/avatar-2-shorts/"
 
 for fileName in files:
     print(f"{tempPath}{fileName};")

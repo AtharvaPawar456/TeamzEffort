@@ -54,7 +54,18 @@ folderList = [
     # "dxn-tailam",
     # "dxn-tooth-paste",
     # "dxn-virgin-oil",
-    "dxn-2in1-v2"
+    # "dxn-2in1-v2",
+    # "img",
+    
+    "dxn-ashwagandha",
+    "dxn-gano-oil",
+    "dxn-gano-tea",
+    "dxn-gokshura",
+    "dxn-kombucha",
+    "dxn-neeli-oil",
+    "dxn-super-green",
+    "dxn-tea-tree-cream"
+    
 ]
 
 # for folder in folderList:
@@ -64,7 +75,7 @@ folderList = [
 # files = os.listdir("dxn-2in1")
 # files = os.listdir("dxn-cocozhi")
 # files = os.listdir("dxn-tooth-paste")
-files = os.listdir("dxn-2in1-v2")
+# files = os.listdir("dxn-2in1-v2")
 
 
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/Dxn%20Spirulina.png"
@@ -72,16 +83,41 @@ files = os.listdir("dxn-2in1-v2")
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-cocozhi/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/"
 
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
-for fileName in files:
-    print(f"'{tempPath}{fileName}',")
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-2in1/"
+# for fileName in files:
+#     print(f"'{tempPath}{fileName}',")
 
 
-https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
-https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
+# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+# https://github.com/AtharvaPawar456/TeamzEffort/blob/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
 
 
-https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
-https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
+# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_63.mp4
+# https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-tooth-paste/file_64.mp4
 
 
+
+
+
+"""
+New images:
+
+dxn-ashwagandha
+dxn-gano-oil
+dxn-gano-tea
+dxn-gokshura
+dxn-kombucha
+dxn-neeli-oil
+dxn-super-green
+dxn-tea-tree-cream
+
+
+
+
+
+
+Old imgs:
+
+
+
+"""
