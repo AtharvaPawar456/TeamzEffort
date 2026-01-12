@@ -74,10 +74,7 @@ imageUrls = [
     "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-kombucha/file_199.mp4"
 
     
-    
-    
-    
-    
+    https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/dxnproductsimages/dxn-kombucha/file_199.mp4
     
     
     
