@@ -25,6 +25,7 @@ def renameAllFiles(folderPath):
 
             _, extension = os.path.splitext(fileName)
             newFileName = f"file_{fileCounter}{extension}"
+            # newFileName = f"temp_{fileCounter}{extension}"
             newPath = os.path.join(folderPath, newFileName)
 
             os.rename(oldPath, newPath)
@@ -44,17 +45,19 @@ folderList = [
     
     
 ]
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
-# files = os.listdir("NewYearCelebration_Jan_2026")
-# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
+files = os.listdir("DXN_AchiverTraining9Jan2026")
+# # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
+# # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_AchiverTraining9Jan2026/"
 
 
 
-# for fileName in files:
-#     print(f"{tempPath}{fileName};")
+for fileName in files:
+    print(f"{tempPath}{fileName};")
 
 
 
