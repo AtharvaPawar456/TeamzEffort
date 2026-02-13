@@ -59,19 +59,18 @@ files = os.listdir("DXN_PalgharDivesh_2025")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/Diwali_Celebration_2025/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_PalgharDivesh_2025/"
 
 
 
-# for fileName in files:
-#     print(f"{tempPath}{fileName};")
+for fileName in files:
+    print(f"{tempPath}{fileName};")
 
 
 
 
 
 """
-
 
 
 
