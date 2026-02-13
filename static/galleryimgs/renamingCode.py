@@ -46,6 +46,7 @@ folderList = [
     # "DXN_PalgharDivesh_2025",
     # "DXN_StarAgentEvent_2025",
     # "DXN_GetTogether_2025",
+    "DXN_WomenWellness_Palghar_Divesh_2025",
     
     
 ]
@@ -55,7 +56,7 @@ folderList = [
 
 # files = os.listdir("DXN_AchiverTraining9Jan2026")
 # files = os.listdir("DXNAnnualRecognitionNite8Jan2026/v2")
-files = os.listdir("DXN_PalgharDivesh_2025")
+files = os.listdir("DXN_WomenWellness_Palghar_Divesh_2025")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
@@ -63,8 +64,8 @@ tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/h
 
 
 
-for fileName in files:
-    print(f"{tempPath}{fileName};")
+# for fileName in files:
+#     print(f"{tempPath}{fileName};")
 
 
 
