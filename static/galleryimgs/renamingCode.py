@@ -56,7 +56,8 @@ folderList = [
     # "DXN_New_Product_Launching_2_7_2025",
     # "DXN_New_Product_Launching_17_08_2025",
     # "DXN_NDTatDadarOffice_19_7_2025",
-    "DXN_Shradhanjali_6_6_2025",
+    # "DXN_Shradhanjali_6_6_2025",
+    "DXN_CouncellingDMI_Dadar_25_5_2025",
     
     
 ]
@@ -74,7 +75,7 @@ files = os.listdir("DXN_Shradhanjali_6_6_2025")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_NDTatDadarOffice_19_7_2025/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_Shradhanjali_6_6_2025/"
 
 
 
