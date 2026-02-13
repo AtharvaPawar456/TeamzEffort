@@ -47,7 +47,9 @@ folderList = [
     # "DXN_StarAgentEvent_2025",
     # "DXN_GetTogether_2025",
     # "DXN_WomenWellness_Palghar_Divesh_2025",
-    "Payment_Proof",
+    # "Payment_Proof",
+    # "DXN_Palghar_Chinchghar_28_6_2024",
+    # "DXN_Salwad_Boisar_30_7_2024",
     
     
 ]
@@ -57,7 +59,8 @@ folderList = [
 
 # files = os.listdir("DXN_AchiverTraining9Jan2026")
 # files = os.listdir("DXNAnnualRecognitionNite8Jan2026/v2")
-files = os.listdir("Payment_Proof")
+files = os.listdir("DXN_Palghar_Chinchghar_28_6_2024")
+# files = os.listdir("DXN_Salwad_Boisar_30_7_2024")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
