@@ -50,26 +50,27 @@ folderList = [
     # "Payment_Proof",
     # "DXN_Palghar_Chinchghar_28_6_2024",
     # "DXN_Salwad_Boisar_30_7_2024",
+    "DirectSellingConferance_15_5_2025",
     
     
 ]
-# for folder in folderList:
-#     renameAllFiles(folder)
+for folder in folderList:
+    renameAllFiles(folder)
 
 
 # files = os.listdir("DXN_AchiverTraining9Jan2026")
 # files = os.listdir("DXNAnnualRecognitionNite8Jan2026/v2")
-files = os.listdir("DXN_Palghar_Chinchghar_28_6_2024")
-# files = os.listdir("DXN_Salwad_Boisar_30_7_2024")
+# files = os.listdir("DXN_Palghar_Chinchghar_28_6_2024")
+files = os.listdir("DirectSellingConferance_15_5_2025")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/Payment_Proof/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_Salwad_Boisar_30_7_2024/"
 
 
 
-for fileName in files:
-    print(f"{tempPath}{fileName};")
+# for fileName in files:
+#     print(f"{tempPath}{fileName};")
 
 
 
