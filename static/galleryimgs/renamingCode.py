@@ -51,22 +51,22 @@ folderList = [
     
     
 ]
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
 # files = os.listdir("DXN_AchiverTraining9Jan2026")
 # files = os.listdir("DXNAnnualRecognitionNite8Jan2026/v2")
-files = os.listdir("DXN_WomenWellness_Palghar_Divesh_2025")
+files = os.listdir("Payment_Proof")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_WomenWellness_Palghar_Divesh_2025/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/Payment_Proof/"
 
 
 
-# for fileName in files:
-#     print(f"{tempPath}{fileName};")
+for fileName in files:
+    print(f"{tempPath}{fileName};")
 
 
 
