@@ -57,12 +57,13 @@ folderList = [
     # "DXN_New_Product_Launching_17_08_2025",
     # "DXN_NDTatDadarOffice_19_7_2025",
     # "DXN_Shradhanjali_6_6_2025",
-    "DXN_CouncellingDMI_Dadar_25_5_2025",
+    # "DXN_CouncellingDMI_Dadar_25_5_2025",
+    "DXN_ShilajitOpening_14_Feb_2026",
     
     
 ]
-# for folder in folderList:
-#     renameAllFiles(folder)
+for folder in folderList:
+    renameAllFiles(folder)
 
 
 
@@ -79,8 +80,8 @@ tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/h
 
 
 
-for fileName in files:
-    print(f"{tempPath}{fileName};")
+# for fileName in files:
+#     print(f"{tempPath}{fileName};")
 
 
 
