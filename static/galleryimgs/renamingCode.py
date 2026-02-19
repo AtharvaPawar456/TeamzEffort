@@ -62,8 +62,8 @@ folderList = [
     
     
 ]
-for folder in folderList:
-    renameAllFiles(folder)
+# for folder in folderList:
+#     renameAllFiles(folder)
 
 
 
@@ -72,16 +72,18 @@ for folder in folderList:
 # files = os.listdir("DXN_AchiverTraining9Jan2026")
 # files = os.listdir("DXNAnnualRecognitionNite8Jan2026/v2")
 # files = os.listdir("DXN_Palghar_Chinchghar_28_6_2024")
-files = os.listdir("DXN_CouncellingDMI_Dadar_25_5_2025")
+# files = os.listdir("DXN_CouncellingDMI_Dadar_25_5_2025")
+files = os.listdir("DXN_ShilajitOpening_14_Feb_2026")
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/NewYearCelebration_Jan_2026/"
 # # # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/"
 # tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXNAnnualRecognitionNite8Jan2026/v2/"
-tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_CouncellingDMI_Dadar_25_5_2025/"
+# tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_CouncellingDMI_Dadar_25_5_2025/"
+tempPath = "https://raw.githubusercontent.com/AtharvaPawar456/TeamzEffort/refs/heads/main/static/galleryimgs/DXN_ShilajitOpening_14_Feb_2026/"
 
 
 
-# for fileName in files:
-#     print(f"{tempPath}{fileName};")
+for fileName in files:
+    print(f"{tempPath}{fileName};")
 
 
 
